@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+
+    <title>Drunken Bunker - Contact</title>
+</head>
+
+<body>
+        <header class="main-header">
+                <nav class="navbar">
+                    <ul>
+                        <li><a class="main-headertxt" href="index.html">Home</a></li>
+                        <li><a class="main-headertxt" href="About.html">About</a></li>
+                        <li><a class="main-headertxt" href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+    <section class="primary-section">
+
+        <h1>Contact us</h1>
+        <div>
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+
+        <h3>Our Location</h3> 
+        <div id="map"></div> 
+
+    </section>
+
+    <script>
+       function initMap() { 
+        var uluru = {lat: 28.501859, lng: 77.410320}; 
+        var map = new google.maps.Map(document.getElementById('map'), { 
+          zoom: 4, 
+          center: uluru 
+        }); 
+        var marker = new google.maps.Marker({ 
+          position: uluru, 
+          map: map 
+        }); 
+      } 
+
+      
+
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAiIMXhie3mvQ1AGh5ETHzY8HdE_3nWAo&callback=initMap">
+    </script>
+
+</body>
+<footer class="main-footer">
+        <div>
+            <ul>
+                <li><a class="main-footertxt" href="About.html">About</a></li>
+                <li><a class="main-footertxt" href="Contact.html">Contact</a></li>
+                <li><a class="main-footertxt" href="#">The Cabinet</a></li>
+                <li><a class="main-footertxt" href="#">Recipes</a></li>
+            </ul>
+        </div>
+
+</div>
+<div>
+    <div>
+        <p class="main-footertxt">© The Drunken Bunker<br> All rights reserved.</p>
+    </div>
+
+</div>
+</div>
+</footer>
+
+<!-- <footer class="main-footer">
+    <p>&copy; 2019 Drunken Bunker<p>
+</footer> -->
+
+</html>

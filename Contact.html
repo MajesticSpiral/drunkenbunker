@@ -4,105 +4,69 @@
 
 <head>
 
-    <meta name="viewport" content="width=device-width">
+    <title> Callum Cheshire | Home </title>
 
-    <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <link rel="stylesheet" a href="mystyles.css">
 
-    <title>Drunken Bunker - Contact</title>
-</head>
+    <meta charset="UTF-8">
 
-<body>
-        <header class="main-header">
-                <nav class="navbar">
-                    <ul>
-                        <li><a class="main-headertxt" href="index.html">Home</a></li>
-                        <li><a class="main-headertxt" href="About.html">About</a></li>
-                        <li><a class="main-headertxt" href="Contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-    <style>
-        #map {
-            height: 400px;
-            width: 100%;
-        }
-    </style>
-    <section class="primary-section">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <h1>Contact us</h1>
-        <div>
-            <form action="action_page.php">
+    <head>
 
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-
-            </form>
-        </div>
-
-
-        <h3>Our Location</h3> 
-        <div id="map"></div> 
-
-    </section>
-
-    <script>
-       function initMap() { 
-        var uluru = {lat: 28.501859, lng: 77.410320}; 
-        var map = new google.maps.Map(document.getElementById('map'), { 
-          zoom: 4, 
-          center: uluru 
-        }); 
-        var marker = new google.maps.Marker({ 
-          position: uluru, 
-          map: map 
-        }); 
-      } 
-
-      
-
-    </script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAiIMXhie3mvQ1AGh5ETHzY8HdE_3nWAo&callback=initMap">
-    </script>
-
-</body>
-<footer class="main-footer">
-        <div>
-            <ul>
-                <li><a class="main-footertxt" href="About.html">About</a></li>
-                <li><a class="main-footertxt" href="Contact.html">Contact</a></li>
-                <li><a class="main-footertxt" href="#">The Cabinet</a></li>
-                <li><a class="main-footertxt" href="#">Recipes</a></li>
+        <nav role="navigation">
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav>
 
-</div>
-<div>
-    <div>
-        <p class="main-footertxt">© The Drunken Bunker<br> All rights reserved.</p>
-    </div>
+    <body>
 
-</div>
-</div>
-</footer>
+        <header class="main-header">
+            
+            <h1>Drunken Bunker</h1>
+        </header>
 
-<!-- <footer class="main-footer">
-    <p>&copy; 2019 Drunken Bunker<p>
-</footer> -->
+        <section class="primary-section t-border">
+
+            <b>Contact us </b>
+
+            <p class="intro">
+                    Hey Guys,
+
+                    Do you want to reach out to the Drunken Bunker team? We would love to hear from you. Use the applicable email address.
+                    
+                    To advertise right here on Drunkenbunker.com or on any of our other social media platforms:
+                    Advertise@Drunkenbunker.com
+                    
+                    If you are having issues with the site or maybe you have suggestions for us to make your browsing experience better:
+                    Support@Drunkenbunker.com
+                    
+                    To speak with us about another issue:
+                    Contact@Drunkenbuner.com
+                    
+                    <address>
+                            Mailing Address:</br>
+                            Drunken Bunker</br>
+                            3183 Wilshire Blvd #196K22</br>
+                            Los Angeles, CA 90010
+                    </address>
+                   
+            </p>
+
+            
+
+        </section>
+
+        
+
+        <footer class="main-footer">
+            <p>All rights reserved to <a href="#">Callum Cheshire</a>.</p>
+            <a href="#top">Back to top »</a>
+        </footer>
+
+    </body>
 
 </html>
